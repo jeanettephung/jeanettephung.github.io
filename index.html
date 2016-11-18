@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Jeanette Phung</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> 
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
@@ -38,11 +39,16 @@
 
 <script id="home-page-template" type="text/x-handlebars-template">
 <div id="home-page" class="page active">
-	<p>
-	Put List of Projects
-	</p>
-	<section id="photos"></section>
-</div>
+	<p>home page</p>
+	<section id="photos">
+		<!-- use when have many projects 
+		EXAMPLE INPUT
+		<img src="https://placekitten.com/333/356" alt="pretty kitty">
+		<img src="https://placekitten.com/255/249" alt="pretty kitty">
+		<img src="https://placekitten.com/378/242" alt="pretty kitty">
+		-->
+	</section>
+	</div>
 </script>
 
 <script id="about-page-template" type="text/x-handlebars-template">
@@ -81,3 +87,20 @@
 <script src="bower_components/handlebars/handlebars.min.js" type="text/javascript"></script>
 <script src="js/app.js" type="text/javascript"></script>
 </html>
+
+
+
+<script>
+	function getRandomSize(min, max) {
+  	return Math.round(Math.random() * (max - min) + min);
+	}
+	var allImages = "";
+
+	for (var i = 0; i < 25; i++) {
+		var width = getRandomSize(200, 400);
+		var height =  getRandomSize(200, 400);
+		allImages += '<img src="https://placekitten.com/'+width+'/'+height+'" alt="pretty kitty">';
+	}
+
+	$('#photos').append(allImages);
+</script>
