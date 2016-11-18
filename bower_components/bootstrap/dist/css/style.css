@@ -1,0 +1,24 @@
+#jp {
+	font-size: 35px;
+	text-align: center;
+}
+
+.navbar {
+	position: fixed;
+  bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#page-container {
+	margin: 20px 37px;
+}
