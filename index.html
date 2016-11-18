@@ -6,9 +6,12 @@
 	<title>Jeanette Phung</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> 
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
 </head>
 <body>
-	<div id="jp">Jeanette Phung</div>
+	<div id="jp" class="page-header">Jeanette Phung</div>
 	<nav class="navbar navbar-inverse" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -31,13 +34,14 @@
 		</div><!-- /.navbar-collapse -->
 	</nav>
 </body>
-<div id="page-container"></div>
+<div id="page-container" class="col-md-12 col-lg-offset-3 col-lg-6"></div>
 
 <script id="home-page-template" type="text/x-handlebars-template">
 <div id="home-page" class="page active">
 	<p>
 	Put List of Projects
 	</p>
+	<section id="photos"></section>
 </div>
 </script>
 
@@ -51,9 +55,24 @@
 
 <script id="contact-page-template" type="text/x-handlebars-template">
 <div id="contact-page" class="page">
-	<p>
-		JeanettePhung@hotmail.com
-	</p>
+	<div id="contact-info" class="col-sm-5">
+		<h1>Contact</h1>
+		<p>JeanettePhung@gmail.com</p>
+	</div>
+	<div id="contact-input" class="col-sm-7">
+		<form>
+			<div class="form-group">
+    		<input type="text" class="form-control" id="contact-name" placeholder="Name">
+  		</div>
+  		<div class="form-group">
+    		<input type="email" class="form-control" id="contact-email" placeholder="Email">
+  		</div>
+			<div class="form-group">
+    		<textarea class="form-control" id="contact-message" rows="5" placeholder="Message"></textarea>
+  		</div>
+  		<button type="submit" class="btn btn-primary">Send</button>
+		</form>
+	</div>
 </div>
 </script>
 
