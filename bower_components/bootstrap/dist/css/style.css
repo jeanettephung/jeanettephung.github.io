@@ -16,8 +16,9 @@
 
 /* NAVBAR */
 .navbar {
+  z-index: 999;
 	position: fixed;
-  bottom: 0;
+  bottom: 30px;
 	left: 0;
 	right: 0;
 }
@@ -47,7 +48,7 @@
 /* PAGE */
 body, html {
 	font-family: 'Nunito', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 10px;
 }
 h1 {
@@ -56,12 +57,13 @@ h1 {
 	font-size: 35px;
 }
 p {
+
 	font-size: 15px;
 }
 body, html {
   height: 100%;
 	/* change to auto/hidden for image gallery */
-  overflow: hidden;
+  overflow: auto;
 	padding-bottom: 120px;
 }
 .page {
@@ -73,6 +75,25 @@ body, html {
 		margin-top: 100px;
 	}
 }
+.btn-primary {
+	float: right !important;
+	border-radius: 0 !important;
+	color: #9d9d9d;
+	background-color: #101010;
+}
+.btn-primary:hover {
+	color: white;
+	background-color: #101010;
+}
+.btn-primary:active {
+	background-color: rgb(80, 80, 80) !important;
+}
+@media (max-width: 800px){
+	.btn-primary {
+		width: 100%;
+	}
+}
+
 
 
 /* Portolio */
@@ -125,15 +146,80 @@ body, html {
 
 
 
+/* ABOUT PAGE */
+#about-page img {
+	width: 100%;
+}
+@media (max-width: 800px){
+	#about-page img  {
+		margin-bottom: 20px;
+	}
+}
+#about-page .btn-primary {
+	float: left !important;
+}
+
+.modal-body {
+	padding: 30px 90px
+}
+.modal-dialog {
+	width: 60%;
+	font-family: 'Lato', sans-serif;
+	font-color: #262626;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+}
+.modal-dialog .bold {
+	font-weight: 700;
+}
+.modal-dialog br {
+	content: "";
+  margin: 1em;
+  display: block;
+  font-size: 24%;
+}
+.modal-dialog .content {
+	padding: 10px;
+	letter-spacing: inherit
+}
+#name {
+	color: #c45911;
+	font-weight: bolder;
+	font-size: 36px;
+	margin-bottom: 0;
+}
+.modal-dialog p {
+	margin: 2px;
+}
+table {
+	border-collapse: collapse;
+	border-top: 1px solid black;
+	width: 100%;
+}
+tr {
+	border-top: 1px solid black;
+}
+td {
+	vertical-align: top;
+	font-size: 18px;
+}
+.modal-dialog .section {
+	padding-top: 15px;
+	color: #c45911;
+	width: 25%;
+	padding-left: 25px;
+}
+th {
+	text-align: left;    
+}
+
+
 /* CONTACT PAGE */
 #contact-info {
 	margin-top: 20px;
 	float: left;
 }
-#contact-info p {
-	font-size: 15px;
-}
-#contact-input .form-group {
+.form-group {
 	float: right;
 	width: 100%;
 }
@@ -141,14 +227,5 @@ body, html {
   border-color: rgb(80, 80, 80);
   box-shadow: none;
   border-radius: 0 !important;
-}
-#contact-input button.btn-primary {
-	float: right !important;
-	border-radius: 0 !important;
-	color: #9d9d9d;
-	background-color: #101010;
-}
-#contact-input button.btn-primary:hover {
-	color: white;
 }
 
