@@ -50,6 +50,11 @@ body, html {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 10px;
+	height: 100%;
+	/* change to auto/hidden for image gallery */
+  overflow: auto;
+	padding-bottom: 120px;
+}
 }
 h1 {
 	font-family: sans-serif;
@@ -60,12 +65,15 @@ p {
 
 	font-size: 15px;
 }
-body, html {
-  height: 100%;
-	/* change to auto/hidden for image gallery */
-  overflow: auto;
-	padding-bottom: 120px;
+#page-container {
+	top: 150px;
 }
+@media (max-width: 800px) {
+	#page-container {
+		top: 110px;
+	}
+}
+/*
 .page {
 	margin-top: 150px;
 	height: 100%;
@@ -75,6 +83,7 @@ body, html {
 		margin-top: 100px;
 	}
 }
+*/
 .btn-primary {
 	float: right !important;
 	border-radius: 0 !important;
@@ -163,7 +172,7 @@ body, html {
 	padding: 30px 90px
 }
 .modal-dialog {
-	width: 60%;
+	width: 80%;
 	font-family: 'Lato', sans-serif;
 	font-color: #262626;
 	border: 1px solid #ccc;
