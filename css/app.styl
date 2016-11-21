@@ -1,0 +1,240 @@
+/* HEADER */
+#jp {
+	font-size: 43px;
+	text-align: center;
+	font-family: 'Roboto Slab', sans-serif;
+	background-color: white;
+	margin: 20px 0 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	padding: 10px 0 20px 0;
+	margin-top: 0px;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+  z-index: 999;
+	position: fixed;
+  bottom: 30px;
+	left: 0;
+	right: 0;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+	float: none;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-toggle 
+{
+  float: none;
+	padding: none;
+	margin-left: 15px;
+	border: none;
+} 
+.navbar-header
+{
+  text-align:center;
+}
+
+
+
+/* PAGE */
+body, html {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	height: 100%;
+	/* change to auto/hidden for image gallery */
+  overflow: auto;
+	padding-bottom: 120px;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 300;
+	font-size: 35px;
+}
+p {
+
+	font-size: 15px;
+}
+#page-container {
+	top: 150px;
+}
+@media (max-width: 800px) {
+	#page-container {
+		top: 110px;
+	}
+}
+/*
+.page {
+	margin-top: 150px;
+	height: 100%;
+}
+@media (max-width: 800px){
+	.page {
+		margin-top: 100px;
+	}
+}
+*/
+.btn-primary {
+	float: right !important;
+	border-radius: 0 !important;
+	color: #9d9d9d;
+	background-color: #101010;
+}
+.btn-primary:hover {
+	color: white;
+	background-color: #101010;
+}
+.btn-primary:active {
+	background-color: rgb(80, 80, 80) !important;
+}
+@media (max-width: 800px){
+	.btn-primary {
+		width: 100%;
+	}
+}
+
+
+
+/* Portolio */
+#home-page {
+	height: 65vh;
+}
+#photos {
+	line-height: 0;   
+	-webkit-column-count: 3;
+	-webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 3px;
+  column-count: 3;
+	column-gap: 0px;
+	margin-left: -15px;
+}
+#photos img {
+  width: 100% !important;
+  height: auto !important;
+	margin: 0 15px 15px
+}
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+  }
+}
+
+
+
+/* ABOUT PAGE */
+#about-page img {
+	width: 100%;
+}
+@media (max-width: 800px){
+	#about-page img  {
+		margin-bottom: 20px;
+	}
+}
+#about-page .btn-primary {
+	float: left !important;
+}
+
+.modal-body {
+	padding: 30px 90px
+}
+.modal-dialog {
+	width: 80%;
+	font-family: 'Lato', sans-serif;
+	font-color: #262626;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+}
+.modal-dialog .bold {
+	font-weight: 700;
+}
+.modal-dialog br {
+	content: "";
+  margin: 1em;
+  display: block;
+  font-size: 24%;
+}
+.modal-dialog .content {
+	padding: 10px;
+	letter-spacing: inherit
+}
+#name {
+	color: #c45911;
+	font-weight: bolder;
+	font-size: 36px;
+	margin-bottom: 0;
+}
+.modal-dialog p {
+	margin: 2px;
+}
+table {
+	border-collapse: collapse;
+	border-top: 1px solid black;
+	width: 100%;
+}
+tr {
+	border-top: 1px solid black;
+}
+td {
+	vertical-align: top;
+	font-size: 18px;
+}
+.modal-dialog .section {
+	padding-top: 15px;
+	color: #c45911;
+	width: 25%;
+	padding-left: 25px;
+}
+th {
+	text-align: left;    
+}
+
+
+/* CONTACT PAGE */
+#contact-info {
+	margin-top: 20px;
+	float: left;
+}
+.form-group {
+	float: right;
+	width: 100%;
+}
+.form-control, .form-control:focus {
+  border-color: rgb(80, 80, 80);
+  box-shadow: none;
+  border-radius: 0 !important;
+}
+
