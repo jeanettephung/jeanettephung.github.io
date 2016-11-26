@@ -11,6 +11,11 @@
   padding: 10px 0 20px 0;
   margin-top: 0px;
 }
+@media (max-width: 800px) {
+  #jp {
+    font-size: 20px;
+  }
+}
 /* NAVBAR */
 .navbar {
   z-index: 999;
@@ -45,7 +50,7 @@ html {
   font-size: 10px;
   height: 100%;
 /* change to auto/hidden for image gallery */
-  overflow: auto;
+/*overflow: hidden;*/
   padding-bottom: 120px;
 }
 h1 {
@@ -64,17 +69,6 @@ p {
     top: 110px;
   }
 }
-/*
-.page {
-	margin-top: 150px;
-	height: 100%;
-}
-@media (max-width: 800px){
-	.page {
-		margin-top: 100px;
-	}
-}
-*/
 .btn-primary {
   float: right !important;
   border-radius: 0 !important;
@@ -94,7 +88,7 @@ p {
   }
 }
 /* Portolio */
-#home-page {
+#home-page.page {
   height: 65vh;
 }
 #photos {
@@ -141,6 +135,17 @@ p {
   }
 }
 /* ABOUT PAGE */
+#about-page.page {
+  margin-top: 130px;
+  height: 70vh;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  #about-page.page {
+    margin-top: 100px;
+    padding-bottom: 25px;
+  }
+}
 #about-page img {
   width: 100%;
 }
@@ -152,8 +157,31 @@ p {
 #about-page .btn-primary {
   float: left !important;
 }
+#resume-btn {
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#resumeModal .modal-content {
+  height: auto;
+  margin: 20px;
+}
+@media (max-width: 600px) {
+  #resumeModal .modal-content {
+    margin: 20px 0px;
+  }
+}
 .modal-body {
-  padding: 30px 90px;
+  padding: 10px 50px;
+}
+@media (max-width: 600px) {
+  .modal-body {
+    padding: 10px 15px;
+  }
 }
 .modal-dialog {
   width: 80%;
@@ -161,6 +189,11 @@ p {
   font-color: #262626;
   border: 1px solid #ccc;
   margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .modal-dialog {
+    width: 100%;
+  }
 }
 .modal-dialog .bold {
   font-weight: 700;
@@ -184,28 +217,35 @@ p {
 .modal-dialog p {
   margin: 2px;
 }
-table {
+hr {
   border-collapse: collapse;
   border-top: 1px solid #000;
   width: 100%;
 }
-tr {
-  border-top: 1px solid #000;
-}
-td {
+.content {
   vertical-align: top;
   font-size: 18px;
 }
 .modal-dialog .section {
-  padding-top: 15px;
   color: #c45911;
-  width: 25%;
   padding-left: 25px;
+  font-size: 18px;
 }
-th {
-  text-align: left;
+@media (max-width: 993px) {
+  .modal-dialog .section {
+    padding-left: 10px;
+  }
 }
 /* CONTACT PAGE */
+#contact-page.page {
+  margin-top: 150px;
+  height: 70vh;
+}
+@media (max-width: 800px) {
+  #contact-page.page {
+    margin-top: 70px;
+  }
+}
 #contact-info {
   margin-top: 20px;
   float: left;
@@ -219,4 +259,12 @@ th {
   border-color: #505050;
   box-shadow: none;
   border-radius: 0 !important;
+}
+#contact-page .modal {
+  margin-top: 150px;
+  font-size: 24px;
+  text-align: center;
+}
+#contact-page .modal-content {
+  padding: 15px;
 }

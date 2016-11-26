@@ -1,7 +1,8 @@
 angular.module('app')
     .config(function($routeProvider){
         $routeProvider
-            .when('/',{controller:'HomeCtrl',templateUrl:'/templates/home.html'})
-            .when('/contact',{templateUrl:'/templates/contact.html'})
+            .when('/',{controller:'na',templateUrl:'/templates/portfolio.html'})
+            .when('/contact',{controller:'ContactCtrl', templateUrl:'/templates/contact.html'})
             .when('/about',{templateUrl:'/templates/about.html'})
+						.when('/pigment',{templateUrl:'/templates/pigment.html'})
     });
