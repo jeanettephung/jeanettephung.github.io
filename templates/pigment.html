@@ -1,7 +1,21 @@
-<h1>WASSUP</h1>
-<h1>WASSUP</h1>
-<h1>WASSUP</h1>
-<h1>WASSUP</h1>
-<h1>WASSUP</h1>
-<h1>WASSUP</h1>
-<h1>PIGMENT BATCH</h1>
+<div id="pigment-page" class="page clearfix">
+	<div id="pigment-walkthrough" class="col-md-6 col-sm-12">
+		<div class="header row">
+			<h1>Pigment Batch</h1>
+		</div>
+		<div id="pigment-description" class="row">
+		<p>Working in a group fo four, the goal was to create an application that wold grab the 500 most recent images from Flickr and be able to filter through the images by dominant color.</p>
+		<p>Through the creation of the website, I was able play around with HTML and CSS. By writing code without any frameworks, I was later able to appreciate the use of Bootstrap and Materialize. This was the first time I experiented with jQuery, where I learned to make simple transitions and make the website look interactive.</p>
+		<p>The biggest struggles were done in the back end. Not having much experience working with APIs, it was a struggle learning to incorporate it into the site. The next difficult parts were using Python Flask to take in an image and determine the dominant color. This was done by breaking down an image into pixels, matching these individual pixels to the closest basic colors through the rgb values, and counting the pixels to determine the dominant color. (The image below shows a palatte of the 10 most dominant colors of the image and determines that the colors are different shades of the color blue).</p>
+		<p>One of the most valuable lessons learned from this project was learning that a data structure should have been created to store the results to quicken the response time of the site. Taking in 500 images and sorting through the most dominant color was very time consuming. The solution was to make the program compute the results and send only the latest one when users are making requests. This would have prevented the website from timing out.</p>
+		<h3>Preview</h3>
+		<p>When users first enter the site, 500 most recent images are instantly grabbed from Flickr and sorted by dominant color. The results are shown in the graph at the top-right corner. Users can choose from the color choices to see the images by dominant color.</p>
+		<p><img class="pigment-images" src="/etc/pigment1.png"></p>
+		<p>After choosing a color, the images of the chosen dominant color are loaded to the users. Pictures can be zoomed by clicking on an image. Users can click to see images of another dominant color by selecting the color options.</p>
+		<p><img class="pigment-images" src="/etc/pigment2.png"></p>
+		</div>
+	</div>
+	<div id="pigment-presentation" class="col-md-6 col-sm-12">
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRiHhxJH1Xca79DC7oO-YnV0HGtTBro1V1ugiEslC9L8CiFpmAHKFrVLOEFfAIp1AqGeIk5AzZqwyQg/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>	
+	</div>
+</div>
