@@ -1,6 +1,6 @@
 /* HEADER */
 #jp {
-	font-size: 43px;
+	font-size: 32px;
 	text-align: center;
 	font-family: 'Roboto Slab', sans-serif;
 	background-color: white;
@@ -8,8 +8,16 @@
 	position: fixed;
 	width: 100%;
 	z-index: 1;
-	padding: 10px 0 20px 0;
+	padding: 10px 0px 7px 0;
 	margin-top: 0px;
+}
+#jp h1 {
+	margin: 3px;
+}
+#jp h2 {
+	font-size: 18px;
+	margin: 5px;
+	color: rgba(67,67,90,0.9);
 }
 @media (max-width: 800px) {
 	#jp {
@@ -17,6 +25,17 @@
 	}
 }
 
+
+
+/* FOOTER */
+#footer {
+	z-index: 1;
+	position: fixed;
+	bottom: 10px;
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+}
 
 
 /* NAVBAR */
@@ -62,6 +81,11 @@ body, html {
 	position: fixed;
 	top: 80px;
 }
+.center-header {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
 h1 {
 	font-family: sans-serif;
 	font-size: 300;
@@ -97,13 +121,34 @@ p {
 		width: 100%;
 	}
 }
+@media (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.desktop {
+		display: inherit;
+	}
+}
+@media (max-width: 768px) {
+	.mobile {
+		display: inherit;
+	}
+}
+@media (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+}
 
 
 
-/* Portolio */
+/* PORTFOLIO */
 #portfolio-page {
 	margin-top: 110px;
 	height: 65vh;
+	overflow: auto;
 }
 #portfolio-page .center {
 	text-align: center;
@@ -182,7 +227,7 @@ p {
 
 /* ABOUT PAGE */
 #about-page.page {
-	margin-top: 130px;
+	margin-top: 100px;
 	height: 70vh;
 	overflow: auto;
 }
@@ -324,7 +369,7 @@ hr {
 /* PIGMENT BATCH */
 #pigment-page {
 	margin-top: 150px;
-	height: 60vh;
+	height: 65vh;
 	overflow: auto;
 }
 #pigment-description {
@@ -363,13 +408,14 @@ iframe {
 	overflow: auto;
 }
 #bridge-page .header {
-	margin-left: 35px;
+	margin-left: 30px;
+	margin-top: 30px;
 }
 #bridge-description {
 	height: 100%;
 	overflow: auto;
 }
-#bridge-walkthrough {
+.bridge-walkthrough {
 	height: 95%;
 	overflow: auto;
 }
@@ -380,19 +426,36 @@ iframe {
 
 
 
-/* Windows8 */
+/* WIN8 */
 #win8-page {
 	margin-top: 100px;
-	height: 60vh;
+	height: 70vh;
 	overflow: auto;
 	text-align: center;
+}
+#win8-page .description {
+	margin-bottom: 10px;
 }
 #win8-page img {
 	border-radius: 25px;
 	margin-bottom: 7px;
-	width: 100%;
+	width: 80%;
 	opacity: .85;
 }
 #win8-page .top {
 	margin-top: 45px;
+}
+
+
+
+/* COGS */
+#cogs-page {
+	margin-top: 110px;
+	height: 67vh;
+	overflow: auto;
+}
+@media (max-width: 800px) {
+	#cogs-page img {
+		width: 100%;
+	}
 }
